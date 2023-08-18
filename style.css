@@ -1,0 +1,64 @@
+h5 {
+        background-color: lightslategrey;
+        margin-top: 20px;
+}
+
+section {
+    margin-top: 20px;
+    width: 400px;
+   }
+#header {
+    background-color: grey;
+    height: 500px
+    }
+#links {
+    background-color: teal;
+    height: 200px;
+    transition-property: background-color, height;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition: rotate 3s;
+
+}
+#animations {
+    background-color: turquoise;
+    height: 200px;
+
+}
+#header:hover {
+    font-size: 30px;
+    color: red;
+    }
+
+#links:hover {
+    background-color: darkkhaki;
+    height: 300px;
+    rotate: 180deg;
+  
+}
+
+#animations:hover {
+    animation-name:foranimationsid;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes foranimationsid {
+    0% {
+    width: 50px;
+    background-color: red;
+    }
+    50% {
+    width: 100px;
+    background-color: green;
+    }
+    75% {
+        width: 500px;
+        background-color: darkcyan;
+    }
+    100% {
+    width: 200px;
+    background-color: blue;
+    }
+}
+
